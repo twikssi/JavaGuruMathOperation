@@ -8,5 +8,11 @@
     <artifactId>MathOperation</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <sonar.projectKey>twikssi_JavaGuruCourse</sonar.projectKey>
+        <sonar.organization>twikssi</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.login>d054c1ae1a453aebd5352798e8d2999d652dd0fc</sonar.login>
+    </properties>
 
 </project>
