@@ -77,4 +77,14 @@ public class MathOperationDemoTest extends TestCase {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testGetDeductionAminusB() {
+        MathOperationDemo mathOperationDemo = new MathOperationDemo(15,10);
+
+        boolean expected = true;
+        boolean actual = mathOperationDemo.GetDeductionAminusB() == 5;
+
+        assertEquals(expected, actual);
+    }
 }
