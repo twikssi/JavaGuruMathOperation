@@ -44,4 +44,22 @@ public class MathOperationDemoTest extends TestCase {
 
         assertEquals(expected, actual);
     }
+
+    public void testGetA() {
+        MathOperationDemo mathOperationDemo = new MathOperationDemo(10,10);
+
+        boolean expected = true;
+        boolean actual = mathOperationDemo.getA() == 10;
+
+        assertEquals(expected, actual);
+    }
+
+    public void testGetB() {
+        MathOperationDemo mathOperationDemo = new MathOperationDemo(10,10);
+
+        boolean expected = true;
+        boolean actual = mathOperationDemo.getB() == 10;
+
+        assertEquals(expected, actual);
+    }
 }
