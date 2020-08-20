@@ -107,4 +107,15 @@ public class MathOperationDemoTest extends TestCase {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testSetA() {
+        MathOperationDemo mathOperationDemo = new MathOperationDemo(10,3);
+        mathOperationDemo.setA(5);
+
+        boolean expected = true;
+        boolean actual = mathOperationDemo.getA() == 5;
+
+        assertEquals(expected, actual);
+    }
 }
