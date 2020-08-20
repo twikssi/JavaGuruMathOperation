@@ -6,6 +6,10 @@ public class MathOperationDemo {
     private double a;
     private double b;
 
+    public double getMultiplicationAandB(){
+        return getA()*getB();
+    }
+
     public double GetDeductionAminusB (){
         return getA() - getB();
     }
