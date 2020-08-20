@@ -97,4 +97,14 @@ public class MathOperationDemoTest extends TestCase {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testGetDivisionAandB() {
+        MathOperationDemo mathOperationDemo = new MathOperationDemo(15,10);
+
+        boolean expected = true;
+        boolean actual = mathOperationDemo.getDivisionAandB() == 1.5;
+
+        assertEquals(expected, actual);
+    }
 }
