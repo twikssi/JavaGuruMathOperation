@@ -16,6 +16,7 @@ public class MathOperationDemoTest extends TestCase {
         assertEquals(expected, actual);
     }
 
+    @Test
     public void testTestEqualsReturnTrue() {
         MathOperationDemo mathOperationDemo1 = new MathOperationDemo(10,10);
         MathOperationDemo mathOperationDemo2 = new MathOperationDemo(10,10);
@@ -26,6 +27,7 @@ public class MathOperationDemoTest extends TestCase {
         assertEquals(expected, actual);
     }
 
+    @Test
     public void testTestEqualsReturnFalse() {
         MathOperationDemo mathOperationDemo1 = new MathOperationDemo(10,10);
         MathOperationDemo mathOperationDemo2 = new MathOperationDemo(15,10.34);
@@ -36,6 +38,7 @@ public class MathOperationDemoTest extends TestCase {
         assertEquals(expected, actual);
     }
 
+    @Test
     public void testTestHashCode() {
         MathOperationDemo mathOperationDemo = new MathOperationDemo(10,10);
 
@@ -45,7 +48,8 @@ public class MathOperationDemoTest extends TestCase {
         assertEquals(expected, actual);
     }
 
-    public void testGetA() {
+    @Test
+    public void testTestGetA() {
         MathOperationDemo mathOperationDemo = new MathOperationDemo(10,10);
 
         boolean expected = true;
@@ -54,7 +58,8 @@ public class MathOperationDemoTest extends TestCase {
         assertEquals(expected, actual);
     }
 
-    public void testGetB() {
+    @Test
+    public void testTestGetB() {
         MathOperationDemo mathOperationDemo = new MathOperationDemo(10,10);
 
         boolean expected = true;
