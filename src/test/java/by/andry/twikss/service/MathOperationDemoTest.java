@@ -87,4 +87,14 @@ public class MathOperationDemoTest extends TestCase {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testGetMultiplicationAandB() {
+        MathOperationDemo mathOperationDemo = new MathOperationDemo(15,10);
+
+        boolean expected = true;
+        boolean actual = mathOperationDemo.getMultiplicationAandB() == 150;
+
+        assertEquals(expected, actual);
+    }
 }
