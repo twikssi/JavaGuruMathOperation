@@ -14,7 +14,7 @@ public class MathOperationDemo {
         return getA()*getB();
     }
 
-    public double GetDeductionAminusB (){
+    public double getDeductionAminusB (){
         return getA() - getB();
     }
 

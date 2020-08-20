@@ -83,7 +83,7 @@ public class MathOperationDemoTest extends TestCase {
         MathOperationDemo mathOperationDemo = new MathOperationDemo(15,10);
 
         boolean expected = true;
-        boolean actual = mathOperationDemo.GetDeductionAminusB() == 5;
+        boolean actual = mathOperationDemo.getDeductionAminusB() == 5;
 
         assertEquals(expected, actual);
     }
