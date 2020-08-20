@@ -67,4 +67,14 @@ public class MathOperationDemoTest extends TestCase {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testGetSumAandB() {
+        MathOperationDemo mathOperationDemo = new MathOperationDemo(10,15);
+
+        boolean expected = true;
+        boolean actual = mathOperationDemo.getSumAandB() == 25;
+
+        assertEquals(expected, actual);
+    }
 }

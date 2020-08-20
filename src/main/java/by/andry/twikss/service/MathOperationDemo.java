@@ -6,6 +6,10 @@ public class MathOperationDemo {
     private double a;
     private double b;
 
+    public double getSumAandB(){
+        return getA() + getB();
+    }
+
     public MathOperationDemo(double a, double b) {
         this.a = a;
         this.b = b;
