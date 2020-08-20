@@ -35,4 +35,13 @@ public class MathOperationDemoTest extends TestCase {
 
         assertEquals(expected, actual);
     }
+
+    public void testTestHashCode() {
+        MathOperationDemo mathOperationDemo = new MathOperationDemo(10,10);
+
+        boolean expected = true;
+        boolean actual = mathOperationDemo.hashCode() == 75498433;
+
+        assertEquals(expected, actual);
+    }
 }
