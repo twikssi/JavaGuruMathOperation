@@ -59,4 +59,18 @@ public class RandomGeneratorDemoTest extends TestCase {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testTestToString() {
+        RandomGeneratorDemo randomGeneratorDemo = new RandomGeneratorDemo();
+
+        boolean expected = true;
+        boolean actual = randomGeneratorDemo.toString().equals("RandomGeneratorDemo{"+
+                "a=" + randomGeneratorDemo.getA() +
+                ", b=" + randomGeneratorDemo.getB() +
+                ", c=" + randomGeneratorDemo.getC() +
+                '}');
+
+        assertEquals(expected, actual);
+    }
 }
