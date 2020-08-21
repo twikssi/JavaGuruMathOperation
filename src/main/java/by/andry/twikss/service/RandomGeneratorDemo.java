@@ -2,6 +2,7 @@ package by.andry.twikss.service;
 
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
+import java.util.Random;
 
 public class RandomGeneratorDemo {
     private Logger logger = LoggerFactory.getLogger(RandomGeneratorDemo.class);
@@ -35,7 +36,8 @@ public class RandomGeneratorDemo {
     }
 
     public int getRandomNumber(){
-        return (int) (Math.random()*(200+1) - 100);
+        Random random = new Random();
+        return random.nextInt(100) - 100;
     }
 
     @Override
