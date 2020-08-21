@@ -9,7 +9,7 @@ public class RandomGeneratorDemo {
 
     }
 
-    public double getRandomNumber(){
-        return (int) (Math.random()*(200+1)) - 100;
+    public int getRandomNumber(){
+        return (int) (Math.random()*(200+1) - 100);
     }
 }
