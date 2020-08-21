@@ -1,22 +1,21 @@
 package by.andry.twikss.service;
 
 public class RandomGeneratorDemo {
-    private double a;
-    private double b;
+    private int a;
+    private int b;
+    private int c;
 
-    public double getA() {
+    public int getA() {
         return a;
     }
 
-    public double getB() {
+    public int getB() {
         return b;
     }
 
-    public double getC() {
+    public int getC() {
         return c;
     }
-
-    private double c;
 
     public RandomGeneratorDemo() {
         this.a = getRandomNumber();
