@@ -8,9 +8,7 @@ public class App {
     private static Logger logger = LoggerFactory.getLogger(App.class);
     public static void main(String[] args) {
         RandomGeneratorDemo randomGeneratorDemo = new RandomGeneratorDemo();
-        logger.info(randomGeneratorDemo.toString());
-        String sum = "Sum all random numbers = " + randomGeneratorDemo.getSumAllNumbers();
+        String sum ="" + randomGeneratorDemo.toString() + "\nSum all random numbers = " + randomGeneratorDemo.getSumAllNumbers();
         logger.info(sum);
-        //        entry point, to be implemented
     }
 }
