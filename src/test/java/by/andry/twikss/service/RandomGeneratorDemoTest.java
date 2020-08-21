@@ -17,6 +17,7 @@ public class RandomGeneratorDemoTest extends TestCase {
         assertEquals(expected, actual);
     }
 
+    @Test
     public void testGetA() {
         RandomGeneratorDemo randomGeneratorDemo = new RandomGeneratorDemo();
         int randomNumber = randomGeneratorDemo.getA();
@@ -27,6 +28,7 @@ public class RandomGeneratorDemoTest extends TestCase {
         assertEquals(expected, actual);
     }
 
+    @Test
     public void testGetB() {
         RandomGeneratorDemo randomGeneratorDemo = new RandomGeneratorDemo();
         int randomNumber = randomGeneratorDemo.getB();
@@ -37,12 +39,23 @@ public class RandomGeneratorDemoTest extends TestCase {
         assertEquals(expected, actual);
     }
 
+    @Test
     public void testGetC() {
         RandomGeneratorDemo randomGeneratorDemo = new RandomGeneratorDemo();
         int randomNumber = randomGeneratorDemo.getC();
 
         boolean expected = true;
         boolean actual = randomNumber >= -100 && randomNumber <= 100;
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testGetSumAllNumbers() {
+        RandomGeneratorDemo randomGeneratorDemo = new RandomGeneratorDemo();
+
+        boolean expected = true;
+        boolean actual = randomGeneratorDemo.getSumAllNumbers() == (randomGeneratorDemo.getA()+ randomGeneratorDemo.getB()+ randomGeneratorDemo.getC());
 
         assertEquals(expected, actual);
     }
