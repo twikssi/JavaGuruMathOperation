@@ -37,4 +37,13 @@ public class RandomGeneratorDemo {
     public int getRandomNumber(){
         return (int) (Math.random()*(200+1) - 100);
     }
+
+    @Override
+    public String toString() {
+        return "RandomGeneratorDemo{" +
+                "a=" + a +
+                ", b=" + b +
+                ", c=" + c +
+                '}';
+    }
 }
