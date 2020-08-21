@@ -8,8 +8,7 @@ public class RandomGeneratorDemo {
     private int c;
 
     public int getSumAllNumbers (){
-        int sum = this.a + this.b + this.c;
-        return sum;
+        return this.a + this.b + this.c;
     }
 
     public int getA() {
