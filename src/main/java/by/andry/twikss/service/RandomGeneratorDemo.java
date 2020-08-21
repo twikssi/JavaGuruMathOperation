@@ -1,9 +1,19 @@
 package by.andry.twikss.service;
 
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+
 public class RandomGeneratorDemo {
+    private Logger logger = LoggerFactory.getLogger(RandomGeneratorDemo.class);
     private int a;
     private int b;
     private int c;
+
+    private int getSumAllNumbers (){
+        int sum = this.a + this.b + this.c;
+        logger.info("Sum all random numbers = " + sum);
+        return sum;
+    }
 
     public int getA() {
         return a;
