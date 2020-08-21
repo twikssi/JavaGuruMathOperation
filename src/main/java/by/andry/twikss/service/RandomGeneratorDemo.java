@@ -9,7 +9,7 @@ public class RandomGeneratorDemo {
     private int b;
     private int c;
 
-    private int getSumAllNumbers (){
+    public int getSumAllNumbers (){
         int sum = this.a + this.b + this.c;
         logger.info("Sum all random numbers = " + sum);
         return sum;
